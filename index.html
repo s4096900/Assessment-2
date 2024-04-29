@@ -1,0 +1,91 @@
+<html>
+    <head> 
+        <title>Assessment Task 2</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        <style>
+            .row {
+                width: 720px;
+                margin: 10px auto 10px auto;
+            }
+            .image-container{
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px;
+    }
+            
+            img{
+                transition: transform .8s;
+                width:200px;
+                height:200px;
+                filter: grayscale(1);
+               
+            }
+             img:hover{
+                transform:scale(1.25);
+                filter: grayscale(0);                                
+            }
+            
+
+        </style>
+    </head>
+    
+    <body style="background-color: rgb( 199, 181, 160);"> 
+    
+        
+            <div class="row">
+                <div class="image-container"><img id="img1" src="img/img1.png" onmouseover="this.src ='img/img1.png';" onmouseout="this.src ='img/img1.png';"></div>
+                <div class="image-container"><img id="img2" src="img/img2.png" onmouseover="this.src ='img/img2.png';" onmouseout="this.src ='img/img2.png';"></div>
+                <div class="image-container"><img id="img3" src="img/img3.png" onmouseover="this.src ='img/img3.png';" onmouseout="this.src ='img/img3.png';"></div>
+            </div>
+            <div class="row">
+                <div class="image-container"><img id="img4" src="img/img4.png" onmouseover="this.src ='img/img4.png';" onmouseout="this.src ='img/img4.png';"></div>
+                <div class="image-container"><img id="img5" src="img/img5.png" onmouseover="this.src ='img/img5.png';" onmouseout="this.src ='img/img5.png';"></div>
+                <div class="image-container"><img id="img6" src="img/img6.png" onmouseover="this.src ='img/img6.png';" onmouseout="this.src ='img/img6.png';"></div>
+            </div>
+            <div class="row">
+                <div class="image-container"><img id="img7" src="img/img7.png" onmouseover="this.src ='img/img7.png';" onmouseout="this.src ='img/img7.png';"></div>
+                <div class="image-container"><img id="img8" src="img/img8.png" onmouseover="this.src ='img/img8.png';" onmouseout="this.src ='img/img8.png';"></div>
+                <div class="image-container"><img id="img9" src="img/img9.png" onmouseover="this.src ='img/img9.png';" onmouseout="this.src ='img/img9.png';"></div>
+            </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/magic.mp3");
+            var sound2 = new buzz.sound("sound/night.mp3");
+            var sound3 = new buzz.sound("sound/water.mp3");
+            var sound4 = new buzz.sound("sound/sun.mp3");
+            var sound5 = new buzz.sound("sound/fire.mp3");
+            var sound6 = new buzz.sound("sound/ice.mp3");
+            var sound7 = new buzz.sound("sound/wind.mp3");
+            var sound8 = new buzz.sound("sound/rock.mp3");
+            var sound9 = new buzz.sound("sound/plant.mp3");
+        
+
+            window.onload =function(){
+                document.getElementById('img1').addEventListener('mouseover', function (){sound1.play ();});
+                document.getElementById('img1').addEventListener('mouseleave', function (){sound1.stop ();});
+                document.getElementById('img2').addEventListener('mouseover', function (){sound2.play ();});
+                document.getElementById('img2').addEventListener('mouseleave', function (){sound2.stop ();});
+                document.getElementById('img3').addEventListener('mouseover', function (){sound3.play ();});
+                document.getElementById('img3').addEventListener('mouseleave', function (){sound3.stop ();});
+                document.getElementById('img4').addEventListener('mouseover', function (){sound4.play ();});
+                document.getElementById('img4').addEventListener('mouseleave', function (){sound4.stop ();});
+                document.getElementById('img5').addEventListener('mouseover', function (){sound5.play ();});
+                document.getElementById('img5').addEventListener('mouseleave', function (){sound5.stop ();});
+                document.getElementById('img6').addEventListener('mouseover', function (){sound6.play ();});
+                document.getElementById('img6').addEventListener('mouseleave', function (){sound6.stop ();});
+                document.getElementById('img7').addEventListener('mouseover', function (){sound7.play ();});
+                document.getElementById('img7').addEventListener('mouseleave', function (){sound7.stop ();});
+                document.getElementById('img8').addEventListener('mouseover', function (){sound8.play ();});
+                document.getElementById('img8').addEventListener('mouseleave', function (){sound8.stop ();});
+                document.getElementById('img9').addEventListener('mouseover', function (){sound9.play ();});
+                document.getElementById('img9').addEventListener('mouseleave', function (){sound9.stop ();});
+
+            }
+</script>
+
+        
+    </body>
+        
+    
+
+</html>
